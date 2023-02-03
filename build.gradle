@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'cn.enaium'
+version '1.0.0'
+
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+
+jar {
+    manifest.attributes(
+            'Manifest-Version': 1.0,
+            'Main-Class': 'cn.enaium.KeepGradleVersion'
+    )
+}
+
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'cn.enaium.cafully:cafully-api:1.0.0'
+
+    implementation 'org.ow2.asm:asm-tree:9.4'
+    implementation 'org.ow2.asm:asm-util:9.4'
+    implementation 'org.ow2.asm:asm-commons:9.4'
+    implementation 'org.ow2.asm:asm-util:9.4'
+    implementation 'org.ow2.asm:asm-analysis:9.4'
+}
