@@ -20,3 +20,7 @@ version=7.6
 #Default false, When open a project
 open=true
 ```
+
+## Dependency
+
+[cafully-plugin-asm](https://github.com/Cafully/cafully-plugin-asm)
