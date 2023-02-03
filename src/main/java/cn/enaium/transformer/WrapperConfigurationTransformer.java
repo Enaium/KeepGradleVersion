@@ -37,7 +37,6 @@ import java.security.ProtectionDomain;
 public class WrapperConfigurationTransformer implements ITransformer {
     @Override
     public boolean supportClass(String name) {
-        System.out.println(name.equals("org/gradle/wrapper/WrapperConfiguration") && KeepGradleVersion.open);
         return name.equals("org/gradle/wrapper/WrapperConfiguration") && KeepGradleVersion.open;
     }
 
